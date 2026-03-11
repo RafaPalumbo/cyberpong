@@ -1,44 +1,102 @@
-⚡ CYBER PONG — Escape Protocol
+# ⚡ Cyber Pong — Escape Protocol
 
-Um jogo de Pong reimaginado em universo cyberpunk, com narrativa, campanha e mecânicas únicas.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/version-v9.0-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/javascript-vanilla-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
+</p>
 
-🎮 JOGAR AGORA — direto no navegador, sem instalação
+<p align="center">
+  Uma releitura moderna do clássico <b>Pong</b>, ambientada em um universo <b>cyberpunk</b> com narrativa, campanha e mecânicas únicas.
+</p>
 
-🕹️ Sobre o Jogo
-Cyber Pong: Escape Protocol é uma releitura criativa do clássico Pong, ambientado em um universo cyberpunk com identidade visual própria, sistema de campanha com prólogo narrativo e mecânicas exclusivas.
-O jogador precisa escapar de um sistema digital hostil, enfrentando oponentes progressivamente mais difíceis em batalhas de Pong com twist.
+---
 
-🎯 Modos de Jogo
-ModoDescrição🏃 CampanhaModo história com prólogo narrativo e níveis progressivos⚔️ Batalha RápidaEscolha seu oponente e entre direto na ação
+# 🎮 Jogar Agora
 
-🎮 Controles
-AçãoControleMover raqueteMouseSwing (atacar)ClickOverdriveSPACEPausarESC
+Acesse diretamente no navegador:
 
-✨ Funcionalidades
+### 👉 https://cyberpongame.netlify.app
 
-🌆 Estética cyberpunk com visual fullscreen imersivo
-📖 Prólogo narrativo com storytelling textual
-🔥 Sistema de Overdrive — habilidade especial do jogador
-🎯 Mecânica de Swing para rebatidas ativas
-👾 Múltiplos oponentes selecionáveis
-📱 Responsivo — funciona no desktop e mobile
-⏸️ Sistema de pausa e retry integrado
+Nenhuma instalação é necessária.
 
-🛠️ Tecnologias
-Desenvolvido com HTML, CSS e JavaScript puro — sem frameworks, sem dependências. Apenas domínio e lógica de jogo do zero.
+---
 
-Como Rodar Localmente
-bash# Clone o repositório
-git clone https://github.com/RafaPalumbo/cyberpong.git
+# 📌 Sobre o Projeto
 
-# Entre na pasta
-cd cyberpong
+**Cyber Pong: Escape Protocol** é uma reinterpretação criativa do clássico Pong, desenvolvida com identidade visual cyberpunk e foco em gameplay dinâmico.
 
-# Abra no navegador
-# Basta abrir o arquivo index.html no seu navegador preferido
-Ou acesse direto: cyberpongame.netlify.app
+No jogo, o jogador precisa **escapar de um sistema digital hostil**, enfrentando adversários progressivamente mais difíceis em batalhas estilizadas de Pong.
 
-👨‍💻 Autor
-Feito por Rafael Palumbo
+O projeto busca combinar:
 
-v9.0 — Fullscreen Edition
+- simplicidade de um clássico arcade  
+- estética futurista  
+- progressão de desafio  
+- mecânicas adicionais que ampliam a experiência original  
+
+---
+
+# 🕹️ Modos de Jogo
+
+## 🏃 Campanha
+Modo história com prólogo narrativo e níveis progressivos onde o jogador enfrenta múltiplos adversários.
+
+## ⚔️ Batalha Rápida
+Permite escolher um oponente e iniciar a partida imediatamente.
+
+Ideal para partidas rápidas.
+
+---
+
+# 🎯 Mecânicas do Jogo
+
+### ⚡ Overdrive
+Habilidade especial que aumenta temporariamente o desempenho do jogador.
+
+### 🎯 Swing
+Mecânica de ataque que permite controlar a direção e intensidade da rebatida.
+
+### 👾 Oponentes Progressivos
+Cada adversário possui dificuldade crescente.
+
+### ⏸️ Sistema de Pausa
+Permite pausar e reiniciar partidas facilmente.
+
+---
+
+# 🎮 Controles
+
+| Ação | Controle |
+|-----|--------|
+| Mover a raquete | Mouse |
+| Swing (Ataque) | Clique |
+| Overdrive | `SPACE` |
+| Pausar | `ESC` |
+
+---
+
+# ✨ Funcionalidades
+
+- 🌆 Estética cyberpunk com visual fullscreen imersivo  
+- 📖 Prólogo narrativo com storytelling textual  
+- ⚡ Sistema de Overdrive  
+- 🎯 Mecânica de Swing  
+- 👾 Seleção de múltiplos oponentes  
+- 📱 Compatível com desktop e mobile  
+- ⏸️ Sistema de pausa e retry integrado  
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando tecnologias web nativas:
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+
+Sem frameworks ou bibliotecas externas.
+
+Toda a lógica e mecânica do jogo foram implementadas diretamente em JavaScript.
