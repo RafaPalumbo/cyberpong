@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Uma releitura moderna do clássico <b>Pong</b>, ambientada em um universo <b>cyberpunk</b> com narrativa, campanha e mecânicas únicas.
+Uma releitura moderna do clássico <b>Pong</b>, ambientada em um universo <b>cyberpunk</b> com narrativa, campanha e mecânicas únicas.
 </p>
 
 ---
@@ -69,11 +69,11 @@ Permite pausar e reiniciar partidas facilmente.
 # 🎮 Controles
 
 | Ação | Controle |
-|-----|--------|
+|------|---------|
 | Mover a raquete | Mouse |
 | Swing (Ataque) | Clique |
-| Overdrive | `SPACE` |
-| Pausar | `ESC` |
+| Overdrive | SPACE |
+| Pausar | ESC |
 
 ---
 
@@ -93,10 +93,46 @@ Permite pausar e reiniciar partidas facilmente.
 
 Este projeto foi desenvolvido utilizando tecnologias web nativas:
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)
 
 Sem frameworks ou bibliotecas externas.
 
-Toda a lógica e mecânica do jogo foram implementadas diretamente em JavaScript.
+---
+
+# 🚀 Como Executar Localmente
+
+Clone o repositório:
+
+git clone https://github.com/RafaPalumbo/cyberpong.git
+
+Entre na pasta do projeto:
+
+cd cyberpong
+
+Abra o arquivo no navegador:
+
+index.html
+
+---
+
+# 👨‍💻 Autor
+
+Rafael Palumbo
+
+GitHub  
+https://github.com/RafaPalumbo
+
+LinkedIn  
+https://www.linkedin.com/in/rafaelpalumbo/
+
+---
+
+# 📦 Versão
+
+v9.0 — Fullscreen Edition
+
+---
+
+⭐ Se você gostou do projeto, considere dar uma estrela no repositório.
