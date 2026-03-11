@@ -1,0 +1,44 @@
+⚡ CYBER PONG — Escape Protocol
+
+Um jogo de Pong reimaginado em universo cyberpunk, com narrativa, campanha e mecânicas únicas.
+
+🎮 JOGAR AGORA — direto no navegador, sem instalação
+
+🕹️ Sobre o Jogo
+Cyber Pong: Escape Protocol é uma releitura criativa do clássico Pong, ambientado em um universo cyberpunk com identidade visual própria, sistema de campanha com prólogo narrativo e mecânicas exclusivas.
+O jogador precisa escapar de um sistema digital hostil, enfrentando oponentes progressivamente mais difíceis em batalhas de Pong com twist.
+
+🎯 Modos de Jogo
+ModoDescrição🏃 CampanhaModo história com prólogo narrativo e níveis progressivos⚔️ Batalha RápidaEscolha seu oponente e entre direto na ação
+
+🎮 Controles
+AçãoControleMover raqueteMouseSwing (atacar)ClickOverdriveSPACEPausarESC
+
+✨ Funcionalidades
+
+🌆 Estética cyberpunk com visual fullscreen imersivo
+📖 Prólogo narrativo com storytelling textual
+🔥 Sistema de Overdrive — habilidade especial do jogador
+🎯 Mecânica de Swing para rebatidas ativas
+👾 Múltiplos oponentes selecionáveis
+📱 Responsivo — funciona no desktop e mobile
+⏸️ Sistema de pausa e retry integrado
+
+🛠️ Tecnologias
+Desenvolvido com HTML, CSS e JavaScript puro — sem frameworks, sem dependências. Apenas domínio e lógica de jogo do zero.
+
+Como Rodar Localmente
+bash# Clone o repositório
+git clone https://github.com/RafaPalumbo/cyberpong.git
+
+# Entre na pasta
+cd cyberpong
+
+# Abra no navegador
+# Basta abrir o arquivo index.html no seu navegador preferido
+Ou acesse direto: cyberpongame.netlify.app
+
+👨‍💻 Autor
+Feito por Rafael Palumbo
+
+v9.0 — Fullscreen Edition
