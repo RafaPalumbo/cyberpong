@@ -76,6 +76,39 @@ body {
     transition: width 0.1s linear;
 }
 
+.hud-energy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 30px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.energy-label {
+    font-size: 9px;
+    color: #ff0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px #ff0;
+}
+
+.energy-container {
+    width: 320px;
+    height: 8px;
+    background: #111;
+    border: 1px solid #333;
+    position: relative;
+    transform: skewX(-20deg);
+}
+
+.energy-bar {
+    height: 100%;
+    background: #ff0;
+    box-shadow: 0 0 6px #ff0;
+    transition: width 0.15s linear;
+    width: 100%;
+}
+
 #p1-hp {
     background: #0ff;
     width: 100%;
@@ -232,6 +265,23 @@ p {
     margin-bottom: 5px;
 }
 
+.boss-difficulty {
+    font-size: 11px;
+    color: #f0f;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    text-shadow: 0 0 4px #f0f;
+}
+
+.boss-difficulty .star {
+    color: #ff0;
+    text-shadow: 0 0 4px #ff0;
+}
+
+.boss-difficulty .star-empty {
+    color: #333;
+}
+
 #dialogue-box {
     position: absolute;
     bottom: 50px;
@@ -303,6 +353,29 @@ p {
     to {
         opacity: 1;
     }
+}
+
+#ending-screen {
+    background: rgba(0, 0, 0, 0.97);
+    z-index: 200;
+}
+
+#ending-screen h1 {
+    font-size: 52px;
+    color: #0ff;
+    text-shadow: 4px 4px 0 #f0f, 0 0 30px #0ff;
+    animation: endingPulse 2s ease-in-out infinite;
+}
+
+#ending-screen p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+@keyframes endingPulse {
+    0%, 100% { text-shadow: 4px 4px 0 #f0f, 0 0 30px #0ff; }
+    50%       { text-shadow: 4px 4px 0 #f0f, 0 0 60px #0ff, 0 0 80px #0ff; }
 }
 
 .scanlines {
