@@ -2,13 +2,13 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/version-v9.0-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/javascript-vanilla-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/version-v13.0-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/javascript-ES6_modules-yellow?style=for-the-badge">
   <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
 </p>
 
 <p align="center">
-Uma releitura moderna do clássico <b>Pong</b>, ambientada em um universo <b>cyberpunk</b> com narrativa, campanha e mecânicas únicas.
+Uma releitura moderna do clássico <b>Pong</b>, ambientada em um universo <b>cyberpunk</b> com narrativa, campanha, modo 1v1 e mecânicas únicas.
 </p>
 
 ---
@@ -25,77 +25,119 @@ Nenhuma instalação é necessária.
 
 # 📌 Sobre o Projeto
 
-**Cyber Pong: Escape Protocol** é uma reinterpretação criativa do clássico Pong, desenvolvida com identidade visual cyberpunk e foco em gameplay dinâmico.
+**Cyber Pong: Escape Protocol** é uma reinterpretação criativa do clássico Pong, desenvolvida com identidade visual cyberpunk e foco em gameplay dinâmico.
 
-No jogo, o jogador precisa **escapar de um sistema digital hostil**, enfrentando adversários progressivamente mais difíceis em batalhas estilizadas de Pong.
+No jogo, o jogador controla a **UNIT-734**, uma IA que tenta escapar de um sistema digital hostil enfrentando guardiões progressivamente mais difíceis em batalhas estilizadas de Pong.
 
-O projeto busca combinar:
-
-- simplicidade de um clássico arcade  
-- estética futurista  
-- progressão de desafio  
-- mecânicas adicionais que ampliam a experiência original  
+O projeto combina:
+- Simplicidade de um clássico arcade
+- Estética futurista com scanlines, partículas e efeitos de glow
+- Progressão de desafio com narrativa entre fases
+- Mecânicas adicionais que ampliam a experiência original
+- Arquitetura modular em ES6
 
 ---
 
 # 🕹️ Modos de Jogo
 
 ## 🏃 Campanha
-Modo história com prólogo narrativo e níveis progressivos onde o jogador enfrenta múltiplos adversários.
+Modo história com prólogo narrativo e 5 níveis progressivos. Cada fase apresenta um guardião com habilidade única, diálogo e log de sistema temático. O progresso é salvo automaticamente via `localStorage`.
 
 ## ⚔️ Batalha Rápida
-Permite escolher um oponente e iniciar a partida imediatamente.
+Escolha qualquer oponente e entre direto na partida. Ideal para treinar contra um boss específico.
 
-Ideal para partidas rápidas.
+## 👥 1 VS 1 Local
+Dois jogadores no mesmo teclado. Controles independentes para cada lado — sem IA, disputa humana direta.
 
 ---
 
 # 🎯 Mecânicas do Jogo
 
 ### ⚡ Overdrive
-Habilidade especial que aumenta temporariamente o desempenho do jogador.
+Acumule energia rebatendo a bola. Com a barra cheia, ative o Overdrive para disparar a bola em velocidade máxima em linha reta.
 
 ### 🎯 Swing
-Mecânica de ataque que permite controlar a direção e intensidade da rebatida.
+Ataque ativo que expande a área de rebatida e aplica efeito de ângulo na bola. Acertar no ponto certo gera um **PERFECT HIT** com bônus de velocidade e energia.
 
-### 👾 Oponentes Progressivos
-Cada adversário possui dificuldade crescente.
+### 👾 Oponentes com Habilidades Únicas
+| Oponente | Habilidade |
+|---|---|
+| O Porteiro | Multiball — clona a bola ao rebater |
+| A Víbora | Speed Burst — dash instantâneo de posicionamento |
+| Tank MK-V | Heavy Hit — rebatidas com força aumentada |
+| Phantom | Stealth — fica invisível periodicamente |
+| Overlord Zero | All — combina todas as habilidades anteriores |
 
-### ⏸️ Sistema de Pausa
-Permite pausar e reiniciar partidas facilmente.
+### 🖱️ Pointer Lock
+O mouse fica capturado dentro da área do jogo durante a partida. Ao pressionar ESC o jogo pausa e o cursor é liberado automaticamente.
+
+### 💾 Progresso Salvo
+O avanço na campanha é salvo automaticamente. O menu exibe a opção **CONTINUAR** com o número do nível atual ao reabrir o jogo.
 
 ---
 
 # 🎮 Controles
 
+## Campanha / Batalha Rápida
 | Ação | Controle |
-|------|---------|
-| Mover a raquete | Mouse |
-| Swing (Ataque) | Clique |
+|---|---|
+| Mover a raquete | Mouse ou W / S |
+| Swing | Clique |
 | Overdrive | SPACE |
-| Pausar | ESC |
+| Pausar / Soltar mouse | ESC |
+
+## Modo 1 VS 1 Local
+| Ação | Jogador 1 | Jogador 2 |
+|---|---|---|
+| Mover | W / S | ↑ / ↓ |
+| Swing | F | L |
+| Overdrive | SPACE | — |
+| Pausar | ESC | ESC |
 
 ---
 
 # ✨ Funcionalidades
 
-- 🌆 Estética cyberpunk com visual fullscreen imersivo  
-- 📖 Prólogo narrativo com storytelling textual  
-- ⚡ Sistema de Overdrive  
-- 🎯 Mecânica de Swing  
-- 👾 Seleção de múltiplos oponentes  
-- 📱 Compatível com desktop e mobile  
-- ⏸️ Sistema de pausa e retry integrado  
+- 🌆 Estética cyberpunk com scanlines, glow e partículas
+- 📖 Narrativa com prólogo, logs de sistema e diálogos por fase
+- ⚡ Sistema de Overdrive com barra de energia visual
+- 🎯 Mecânica de Swing com hitbox e PERFECT HIT
+- 👾 5 oponentes com habilidades distintas e dificuldade progressiva
+- 👥 Modo 1v1 local para dois jogadores
+- 🖱️ Pointer Lock — mouse capturado na área do jogo
+- 🔊 Efeitos sonoros sintetizados via Web Audio API
+- 💾 Progresso de campanha salvo via localStorage
+- ⏸️ Sistema de pausa com liberação automática do mouse
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+# 🏗️ Arquitetura
 
-Este projeto foi desenvolvido utilizando tecnologias web nativas:
+O projeto foi refatorado da v9 (monolítico) para a v13 com arquitetura modular ES6:
+```
+cyberpong/
+├── index.html
+├── style.css
+├── game.js        # loop principal, input, pointer lock
+├── state.js       # estado global compartilhado
+├── data.js        # CAMPAIGN_LEVELS, GAME_STATE, diálogos
+├── entities.js    # player, enemy, classe Ball
+├── physics.js     # colisão, swing, dano, special
+├── ai.js          # lógica de IA dos oponentes
+├── renderer.js    # draw, drawPaddle, screenShake
+├── particles.js   # explosões e textos flutuantes
+├── audio.js       # sons sintetizados via Web Audio API
+└── ui.js          # telas, HUD, diálogos, localStorage
+```
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla)
+---
+
+# 🛠️ Tecnologias
+
+- HTML5 Canvas
+- CSS3
+- JavaScript ES6 (módulos nativos)
+- Web Audio API
 
 Sem frameworks ou bibliotecas externas.
 
@@ -104,34 +146,38 @@ Sem frameworks ou bibliotecas externas.
 # 🚀 Como Executar Localmente
 
 Clone o repositório:
-
+```bash
 git clone https://github.com/RafaPalumbo/cyberpong.git
-
-Entre na pasta do projeto:
-
 cd cyberpong
+```
 
-Abra o arquivo no navegador:
+Por usar ES6 modules, o projeto precisa ser servido via servidor local. A forma mais simples:
+```bash
+# Com Python
+python3 -m http.server 8000
 
-index.html
+# Com Node
+npx serve .
+```
+
+Acesse `http://localhost:8000` no navegador.
+
+> ⚠️ Abrir o `index.html` diretamente pelo sistema de arquivos não funciona com ES6 modules.
 
 ---
 
 # 👨‍💻 Autor
 
-Rafael Palumbo
+**Rafael Palumbo**
 
-GitHub  
-https://github.com/RafaPalumbo
-
-LinkedIn  
-https://www.linkedin.com/in/rafaelpalumbo/
+[![GitHub](https://img.shields.io/badge/GitHub-RafaPalumbo-black?style=for-the-badge&logo=github)](https://github.com/RafaPalumbo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rafaelpalumbo-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rafaelpalumbo/)
 
 ---
 
 # 📦 Versão
 
-v9.0 — Fullscreen Edition
+**v13.0 — Lock Edition**
 
 ---
 
