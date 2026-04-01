@@ -160,10 +160,6 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-Acesse `http://localhost:8000` no navegador.
-
-> ⚠️ Abrir o `index.html` diretamente pelo sistema de arquivos não funciona com ES6 modules.
-
 ---
 
 # 👨‍💻 Autor
